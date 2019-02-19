@@ -1,6 +1,36 @@
 .topic{
-	height:30px;
-	font-size: 23px;
-	text-align: center;
-	width: 100px;
+	display:block;
+    text-align: center;
+    height:5%;
+    border:solid black;
+    margin-top:10px;
+    margin-left: 15%;
+    margin-right: 15%;
+    border-radius: 20px;
+    padding:5%;
+    color:blue;
+    font-size: 35px;
+}
+
+.login {
+	animation:fadein 1s linear;
+    margin: 15% auto;
+    padding: 5%;
+    box-shadow: 4px 9px 20px 0px #8d92ca;
+    width: 500px;
+}
+
+@keyframes fadein{
+	0%{
+		opacity:0;
+	}
+30% {
+	opacity: 0.3;
+	}
+60%{
+	opacity:0.6;
+	}
+100%{
+	opacity:1;
+}	
 }

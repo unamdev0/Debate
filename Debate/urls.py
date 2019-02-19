@@ -20,6 +20,6 @@ from index import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('debate/',include('index.urls')),
-    path('',views.index,name='index')
+    path('',views.index,name='index'),
 
 ]
