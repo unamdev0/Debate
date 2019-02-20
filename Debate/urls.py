@@ -19,6 +19,8 @@ from index import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('debate/',include('django_registration.backends.activation.urls')),
+    path('debate/',include('django.contrib.auth.urls')),
     path('debate/',include('index.urls')),
     path('',views.index,name='index'),
 

@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'index',
+    'django_registration'
 ]
 
 MIDDLEWARE = [
@@ -86,6 +87,11 @@ DATABASES = {
 # Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators
 
+PASSWORD_HASHER = [
+        'django.contrib.auth.hasher.PBKDF2PasswordHasher'
+]
+
+
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
@@ -124,3 +130,6 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [STATIC_DIR,]
 
 LOGIN_URL = '/debate/login/'
+
+
+ACCOUNT_ACTIVATION_DAYS = 1 #no. of days in which user can confirm his email made with django_registration

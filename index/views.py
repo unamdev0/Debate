@@ -29,4 +29,3 @@ def user_login(request):
 	else:
 		return(render(request,'index/login.html'))
 
-

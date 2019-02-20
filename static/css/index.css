@@ -13,11 +13,12 @@
 }
 
 .login {
-	animation:fadein 1s linear;
-    margin: 15% auto;
+    animation:fadein 1s linear;
+    margin: 10% auto;
     padding: 5%;
     box-shadow: 4px 9px 20px 0px #8d92ca;
     width: 500px;
+	
 }
 
 @keyframes fadein{
@@ -33,4 +34,42 @@
 100%{
 	opacity:1;
 }	
+}
+
+.register{
+    margin: 2% auto;
+    border-radius: 14px;
+    padding: 5%;
+    width:600px;
+    border:2px solid black;
+    box-shadow: -4px 4px 20px 3px #f55ee5;
+    animation:fadein 1s linear;
+}
+
+.register input{
+        display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.register p label{
+    display:block;
+}
+
+.helptext{
+    display:none;
+}
+
+.register ul {
+    display:none;
 }
