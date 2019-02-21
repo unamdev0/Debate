@@ -153,3 +153,5 @@ LOGIN_URL = '/debate/login/'
 ACCOUNT_ACTIVATION_DAYS = 3 #no. of days in which user can confirm his email made with django_registration
 
 REGISTRATION_AUTO_LOGIN = True
+
+SITE_ID=1

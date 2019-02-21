@@ -1,5 +1,11 @@
-This is a confirmation email your 
-Please click the following link to activate your account
-{{ activation_key }}
+{% trans 'Activate Account at' %} {{site.name}}:
 
-This key is only valid for {{ expiration_days }}
+Hello there!
+
+Click the link below to activate your account
+
+http://{{site.domain}}{{% url 'registration:registration_activate' activation key %}}
+
+
+{% blocktrans %}The above link is valid for {{ expiration_days }} days.{% endblocktrans %}
+

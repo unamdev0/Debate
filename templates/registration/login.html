@@ -3,7 +3,7 @@
 {% block body_block %}
 <div class="login">
   <h1 style="text-align:center">Login</h1>
-	<form action="{% url 'debate:login' %}" method="POST">
+	<form action="." method="POST">
 		{% csrf_token %}
 		<div class="form-group">
     <label for="exampleInputEmail1">Username</label>
