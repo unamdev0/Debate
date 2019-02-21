@@ -1,0 +1,5 @@
+This is a confirmation email your 
+Please click the following link to activate your account
+{{ activation_key }}
+
+This key is only valid for {{ expiration_days }}

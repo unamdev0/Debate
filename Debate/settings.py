@@ -28,6 +28,23 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+######################################
+######################################
+
+## Here Enter details of your email id for sending confirmation emails 
+
+DEFAULT_FROM_EMAIL = "youremail@gmail.com"
+
+EMAIL_HOST = "smtp.gmail.com"
+
+EMAIL_HOST_USER = "youremail@gmail.com"
+
+EMAIL_HOST_PASSWORD = "youremailpassword"
+
+EMAIL_PORT = 587
+
+EMAIL_USE_TLS = True
+
 
 # Application definition
 
@@ -36,10 +53,11 @@ INSTALLED_APPS = [
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
+    'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'index',
-    'django_registration'
+    'registration'
 ]
 
 MIDDLEWARE = [
@@ -132,4 +150,6 @@ STATICFILES_DIRS = [STATIC_DIR,]
 LOGIN_URL = '/debate/login/'
 
 
-ACCOUNT_ACTIVATION_DAYS = 1 #no. of days in which user can confirm his email made with django_registration
+ACCOUNT_ACTIVATION_DAYS = 3 #no. of days in which user can confirm his email made with django_registration
+
+REGISTRATION_AUTO_LOGIN = True

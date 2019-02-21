@@ -1,0 +1,17 @@
+{% extends 'index/base.html' %}
+
+{% block body_block %}
+
+  <div class="register">
+  <h1 style="text-align:center">Register</h1>
+  <form  method="POST" action=".">
+    {% csrf_token %}
+    <div class="form-group">
+    {{form.as_p}}
+    <div class="form-group" style="text-align:center">
+    <input type="submit" style="width:100px;background:blue;color:white" class="btn btn-primary" placeholder="Submit">
+  </div>
+  </form>
+</div>
+
+{% endblock %}

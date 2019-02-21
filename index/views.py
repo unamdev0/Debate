@@ -4,10 +4,14 @@ from django.contrib.auth import login,logout,authenticate
 from django.urls import reverse
 from django.contrib.auth.decorators import login_required
 
+
 # Create your views here.
 
 def index(request):
 	return(render(request,'index/index.html'))
+
+
+
 
 def user_login(request):
 
@@ -28,4 +32,3 @@ def user_login(request):
 			return HttpResponse("Invalid User")
 	else:
 		return(render(request,'index/login.html'))
-
