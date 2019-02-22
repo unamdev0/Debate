@@ -147,7 +147,8 @@ STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [STATIC_DIR,]
 
-LOGIN_URL = '/debate/login/'
+LOGIN_URL = '/accounts/login/'
+
 
 
 ACCOUNT_ACTIVATION_DAYS = 3 #no. of days in which user can confirm his email made with django_registration

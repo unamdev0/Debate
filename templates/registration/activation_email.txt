@@ -1,11 +1,10 @@
-{% trans 'Activate Account at' %} {{site.name}}:
+Activate your account at {{site.name}}:
 
 Hello there!
 
 Click the link below to activate your account
 
-http://{{site.domain}}{{% url 'registration:registration_activate' activation key %}}
+http://{{site.domain}}{{% url 'registration_activate' activation key %}}
 
-
-{% blocktrans %}The above link is valid for {{ expiration_days }} days.{% endblocktrans %}
+The above link is valid for {{ expiration_days }} days.
 
